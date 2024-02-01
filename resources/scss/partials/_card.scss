@@ -1,0 +1,4 @@
+article {
+    @include flex(direction, justify-content, align-items);
+    margin: 2rem;
+}

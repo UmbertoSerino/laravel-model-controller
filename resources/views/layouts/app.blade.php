@@ -11,10 +11,9 @@
 
 @yield('head-content')
 <body>
-    <main>
-        App.Blade
+    <main class="my_container">
+        @yield('main-content')
     </main>
-    @yield('main-content')
 
 
 @yield('script-content')
