@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+// collegare il controller in cui è stato inserito
+use App\Http\Controllers\PageController as MovieController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// inserire il controller e il nome del metodo
+Route::get('/', [MovieController::class, 'index']);
