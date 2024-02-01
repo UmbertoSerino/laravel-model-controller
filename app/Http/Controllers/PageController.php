@@ -7,8 +7,10 @@ use Illuminate\Http\Request;
 // va creato dal terminale "php artisan make:controller PageController" 
 class PageController extends Controller
 {
+
     public function index()
     {
-        return 'Prova, prova, sa,sa';
+        // ritorniamo alla pagina dedicata
+        return view('pages.home');
     }
 }

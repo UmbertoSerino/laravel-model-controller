@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 // collegare il controller in cui è stato inserito
-use App\Http\Controllers\PageController as MovieController;
+use App\Http\Controllers\PageController as PageController;
+use App\Http\Controllers\MovieController as MovieController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +16,5 @@ use App\Http\Controllers\PageController as MovieController;
 */
 
 // inserire il controller e il nome del metodo
-Route::get('/', [MovieController::class, 'index']);
+Route::get('/', [PageController::class, 'index']);
+Route::get('/movies', [MovieController::class, 'index']);

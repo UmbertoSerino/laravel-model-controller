@@ -5,11 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title></title>
+    <title>Movies List</title>
     @vite('resources/js/app.js')
 </head>
 
+@yield('head-content')
 <body>
+    <main>
+        App.Blade
+    </main>
+    @yield('main-content')
+
+
+@yield('script-content')
 
 </body>
 
